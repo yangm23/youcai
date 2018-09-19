@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/table_youcai?&useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password:
+  jackson:
+    default-property-inclusion: non_null
+    date-format: yyyy-MM-dd
+    time-zone: GMT+8
+server:
+  port: 8082
+  servlet:
+    context-path: /guest
+security:
+  basic:
+    enabled: false
